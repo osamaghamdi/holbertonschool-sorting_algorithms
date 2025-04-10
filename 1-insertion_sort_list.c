@@ -31,7 +31,7 @@ void insertion_sort_list(listint_t **list)
 			if (right->next)
 				right->next->prev = left;
 
-			// swap the two nodes
+			/*swap the two nodes*/
 			left->next = right->next;
 			right->prev = left->prev;
 			right->next = left;
